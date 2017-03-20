@@ -11,12 +11,16 @@ package me.daveranson.fib;
  */
 public class Main {
 
+    private Main() {
+        //This class should not be constructed.
+    }
+
     /**
      * Prints the first 15 elements of the Fibonacci sequence.
      *
      * @param args ignored.
      */
-   public final static void main (String [] args) {
+    public static final void main(String[] args) {
        Fibonacci fib = new Fibonacci();
        fib.get(0,15).forEach(System.out::println);
    }
